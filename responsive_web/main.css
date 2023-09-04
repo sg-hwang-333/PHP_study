@@ -1,0 +1,78 @@
+
+/* 셀렉터 {속성 : 값} */
+* {
+    padding: 0;
+    margin: 0;
+}
+div{
+    border: 1px solid gray;
+}
+body {
+    background-color: rgb(202. 227, 166);
+}
+/* nav li : nav 요소 내의 모든 li 선택
+   nav>li : 상위 요소가 nav인 모든 li 요소 선택 */
+nav li {
+    list-style: none;
+    border: 1px solid gray;
+    width : 20%;
+    text-align: center;
+    float:right;
+    box-sizing: content-box;  /* border의 1px은 크기에 포함시키지 않음*/
+}
+nav {
+    overflow : hidden; /* 텍스트가 넘칠 때는 숨겨라 */
+}
+nav li {
+    width : 20%;
+    float : left;
+    list-style : none;
+    text-align : center;
+    border : 1px solid red;
+    box-sizing : border-box; /* 여백까지 가로에 맞춤 */ 
+}
+header h1 {
+    text-align: center;
+    margin-bottom : 20px;
+    border: 1px solid gray;
+}
+header {
+    padding-top: 20px;
+    padding-bottom: 0px;
+    border: 1px solid gray;
+}
+.content{
+    padding: 10px;
+}
+.content h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+footer {
+    border: 1px solid gray;
+    height:100px;
+    text-align: center;
+    line-height: 100px;
+}
+
+@media (max-width : 768px) { /* 가로 최대 크기 768px, 스마트폰 */
+    /* selector {속성 : 값 ...} */
+    body {
+        background : orangered;   
+    }
+}
+@media (min-width : 768px) { /* 가로 크기가 768 이상일 때, 스마트폰 다음 단계*/
+    body {
+        background : yellowgreen;
+    }
+}
+@media (min-width : 992px) {
+    body {
+        background : dodgerblue;
+    }
+}
+@media (min-width : 992px) and (max-width: 1199px) {
+    body {
+        background : purple;
+    }
+}

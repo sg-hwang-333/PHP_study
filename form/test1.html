@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: gray;
+        }
+        .block{
+            background-color: lightpink;
+            margin-left: 80px;
+            height: 700px;
+            width: 700px;
+        }
+        .item {
+            display: inline-block;
+            width: 150px;
+        }
+    </style>
+</head>
+<body>
+    <h2 style="margin-left:350px;">회원가입</h2>
+    <div class="block">
+        <div>
+        <span class="item">아이디</span>
+        <input type="text">
+        <input type="button" value="중복확인">
+        </div>
+
+        <br>
+
+        <div>
+        <span class="item">비밀번호</span>
+        <input type="password">
+        *비밀번호를 다시 입력해주세요
+        </div>
+
+        <br>
+
+        <div>
+        <span class="item">비밀번호 확인</span>
+        <input type="password">
+        </div>
+
+        <br>
+
+        <div>
+        <span class="item">성명</span>
+        <input type="text">
+        </div>
+
+        <br>
+
+        <div>
+        <span class="item">성별</span>
+        <input type="radio" name="gender">남자
+        <input type="radio" name="gender">여자
+        </div>
+
+        <br>
+
+        <div>
+        <span class="item">이메일</span>
+        <input type="text"> @ <input type="text">
+        <select>
+            <option>naver.com</option>
+            <option>gmail.com</option>
+            <option>daum.net</option>
+        </select>
+        </div>
+        <br>
+
+        <div>
+        <span class="item">주소</span>
+        <input type="text"> <input type="button" value="주소찾기">
+        </div>
+
+        <br>
+
+        <div>
+        <span class="item">상세주소</span>
+        <input type="text">
+        </div>
+
+        <br>
+
+        <div>
+        <span class="item">휴대폰</span>
+        <input type="radio" name="phone"> SKT
+        <input type="radio" name="phone"> KT
+        <input type="radio" name="phone"> LGU+
+        </div>
+        
+        <div>
+            <span class="item"></span>
+        <select>
+            <option>010</option>
+            <option>016</option>
+            <option>011</option>
+        </select>
+        -
+        <input type="text" size="4" > - <input type="text" size="4">
+        </div>
+
+        <br>
+
+        <div>
+        <span class="item">관심</span>
+        <input type="checkbox"> 수입차 
+        <input type="checkbox"> 국산차
+        <input type="checkbox"> SUV
+        <input type="checkbox"> 경차
+        <input type="checkbox"> LPG
+        </div>
+
+        <br>
+
+        <div>
+        <span class="item"></span>
+        <textarea name="" id="" cols="30" rows="10"></textarea>
+        </div>
+        
+
+    </div>
+
+    <input type="button" value="가입하기" style="margin-left:350px;">
+    <input type="reset" value="다시입력">
+    
+    
+</body>
+</html>

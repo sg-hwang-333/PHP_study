@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script> -->
+</head>
+<body>
+    <h1>Login Form</h1>
+    <form method="post" action="#">
+    input your ID 
+    <div class="input-group mb-3">
+        <input type="text" class="form-control" placeholder="Id" aria-label="Username" aria-describedby="basic-addon1">
+      </div>
+      <br>
+      
+    Input your Password 
+    <div class="input-group mb-3">
+        <input type="password" class="form-control" placeholder="password" aria-label="Username" aria-describedby="basic-addon1">
+      </div>
+      <br>
+    <button type="button" class="btn btn-outline-primary">Log in</button> <br>
+    </form>
+
+    <hr>
+    <br>
+
+    <h1>Login Form</h1>
+    <form action="#" method="post">
+        <label for="id">input your ID:</label>
+        <input type="text" claas="form-label" id="id" placeholder="Id" required disabled>
+        <!-- placeholder : 뭐 입력하라고 힌트주는 것 (기본값) -->
+        <!-- required : 필수로 입력해야 할 것 -->
+        <!-- readonly, disabled : 읽기 전용 모드 (수정 불가능) (disable은 아예 회색처리됨 -> 더 자주 쓰임) -->
+
+        <br> <label for="pw">Input your Password : </label>
+        <input type="password" claas="form-label" id="pw" placeholder="Pw">
+
+        <br>
+        Email : <input type="email" name="email">
+        <br>
+        <input type="color" value="#000000" onchange="document.body.style.color=this.value">
+        <br>
+        <input type="number" name="num" min="0" max="10" step="2">
+        <!-- step : 얼마씩 증감할거냐 -->
+        <br>
+        <button type="submit class=btn btn-warning">Login</button>
+    </form>
+</body>
+</html>

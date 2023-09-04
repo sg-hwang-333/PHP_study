@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    <title>Document</title>
+    <style>
+        * {
+            text-align: center;
+        }
+        #header{
+            background-color: lightskyblue;
+            color: gray;
+        }
+        a{
+            display: block;
+        }
+        #left {
+            background-color: pink;
+        }
+        #center {
+            background-color:lightgoldenrodyellow;
+        }
+        #right {
+            background-color: slateblue;
+            color:white;
+        }
+        @media (min-width : 768px ) and (max-width: 992px) {
+            #left, #center {
+                height: 230px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="img-rounded" id="header">
+                <h1>GOOD SOUP PRESTAURANT</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-2 col-sm-6 img-rounded" id="left">
+                <ul class="list-unstyled">
+                    <li><a href="#">파스타</a></li>
+                    <li><a href="#">피자</a></li>
+                    <li><a href="#">샐러드</a></li>
+                    <li><a href="#">음료</a></li>
+                </ul>
+            </div>
+            <div class="col-md-8 col-sm-6 img-rounded" id="center">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos quis animi, veritatis numquam fuga illo voluptatem sed ea expedita ipsum ut vel labore dignissimos ex quisquam, obcaecati temporibus provident. Temporibus. <br><br>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur quas molestiae, ab quos quis tenetur nesciunt provident architecto id quidem reprehenderit fugit laudantium aliquid hic eum, culpa dolorum sed ad?
+            
+            </div>
+            <div class="col-md-2 col-sm-12 img-rounded" id="right">
+                <ul class="list-unstyled">
+                    <li>메인쉐프 멤버</li>
+                    <li>김주영</li>
+                    <li>황슬기</li>
+                    <li>김주환</li>
+                    <li>이한별</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+    <footer><h4>good soup 레스토랑을 이용해 주셔서 감사합니다</h4></footer>
+</body>
+</html>

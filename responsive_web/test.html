@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-repeat: no-repeat;
+            font-size: 1.5vw;   /* 가로넓이의 1/100, 반응형 웹에서 많이 쓰임 */
+        }
+
+        @media (max-width: 768px) {  
+            body {
+                background-image: url("./Image/딸기라떼.PNG");
+            }
+        }
+        @media (min-width: 768px) {
+            body {
+                background-image: url("./Image/망고.PNG");
+            }
+        }
+        @media (min-width: 992px) {
+            body { 
+                background-image: url("Image/몬스터.PNG");
+            }
+        }
+        @media (min-width: 1200px) {
+            body {
+                background-image: url("Image/밀키스.PNG");
+            }
+        }
+    </style>
+</head>
+<body>
+    <font color="red">Lera Melnicova</font>
+</body>
+</html>
