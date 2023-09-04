@@ -12,5 +12,6 @@
     mysqli_query($conn, $sql);
     echo "Inserted!";
     mysqli_close($conn);
-
 ?>
+
+<button onclick="location.href='list.php'">Back</button>

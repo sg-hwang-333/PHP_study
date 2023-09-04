@@ -1,7 +1,7 @@
 <?php
   include("./db_conn.php");
   $id = $_GET['idx'];
-  $sql = "select * from myuser where id=".$id;
+  $sql = "select * from book where id=".$id;
   $result = mysqli_query($conn,$sql);
   $row = mysqli_fetch_array( $result );
 ?>
@@ -17,8 +17,9 @@
     <h1>Edit</h1>
     <form action="update.php" method="POST">
         <input type="hidden" name="id" value="<?php echo $row['id']; ?>">
-        userid: <input type="text" name="userid" value="<?php echo $row[ 'userid' ]; ?>"><br>
-        username: <input type="text" name="username" value="<?php echo $row[ 'username' ]; ?>"><br>
+        title: <input type="text" name="title" value="<?php echo $row[ 'title' ]; ?>"><br>
+        author: <input type="text" name="author" value="<?php echo $row[ 'author' ]; ?>"><br>
+        price: <input type="text" name="price" value="<?php echo $row[ 'price' ]; ?>"><br>
         <button type="submit">Edit</button>
     </form>
   </body>
