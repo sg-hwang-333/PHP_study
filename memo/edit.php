@@ -13,14 +13,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Edit</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+ 
 </head>
 <body>
     <h1>수정하기</h1>
-    <form action="update.php" method="post">
-        <input type="hidden" name="id" value="<?php echo $id; ?>">
-        Name: <input type="text" name="name" value="<?php echo $row['name']; ?>"> <br>
-        Content: <input type="text" name="content" value="<?php echo $row['content']; ?>"> <br>
-        <button type="submit">수정하기</button>
-    </form>
+    <table border=1 class="table">
+        <form action="update.php" method="post">
+            <input type="hidden" name="id" value="<?php echo $id; ?>">
+            <tr>
+                <td>Name: </td>
+                <td><input type="text" name="name" value="<?php echo $row['name']; ?>"><td>
+            </tr>
+            <tr>
+                <td>Content: </td>
+                <td><input type="text" name="content" value="<?php echo $row['content']; ?>"><td>
+            </tr>
+            <tr>
+                <td> <button type="submit">수정하기</button> </td>
+            </tr>
+        </form>
+    </table>
 </body>
 </html>

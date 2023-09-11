@@ -9,7 +9,6 @@
 </head>
 <body>
     <h1>목록보기</h1>
-    <a href="write.html">write</a>
 </body>
 </html>
 
@@ -24,7 +23,7 @@
     $arr = Array("#", "Name", "Content", "ETC");
     echo "<tr>";
     for ($i = 0; $i < 4; $i++) {
-        echo "<td>".$arr[$i]."</td>";
+        echo "<th>".$arr[$i]."</th>";
     }
     echo "</tr>";
 
@@ -42,3 +41,13 @@
 
 ?>
 </table>
+<form action="search.php" method="post">
+    <select name="option">
+        <option value="name"><?php echo $arr[1] ?></option>
+        <option value="content"><?php echo $arr[2] ?></option>
+    </select>
+    <input type="text" name="search">
+    <button type="submit">검색</button>
+</form>
+
+<a href="write.html">write</a>
